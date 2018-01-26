@@ -19,15 +19,15 @@ def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
     nev_ratio = nev/total
     
     if voft_ratio + alw_ratio >= .90:
-            return 'Excellent'
+    	return 'Excellent'
     elif oft_ratio + voft_ratio + alw_ratio >= .80:
-            return 'Very Good'
+    	return 'Very Good'
     elif som_ratio + oft_ratio + voft_ratio + alw_ratio >= .70:
-            return 'Good'
+    	return 'Good'
     elif rar_ratio + som_ratio + oft_ratio + voft_ratio + alw_ratio >= .60:
-            return 'Needs Improvement'
+    	return 'Needs Improvement'
     else:
-            return 'Unacceptable'
+    	return 'Unacceptable'
             
 		
 		
