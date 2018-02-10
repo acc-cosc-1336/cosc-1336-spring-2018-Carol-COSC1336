@@ -14,7 +14,6 @@ def sum_odd_numbers(num):
             total += num
        
     return total
-    print (total)
 
 def list_of_even_numbers(num):
     '''
@@ -26,10 +25,12 @@ def list_of_even_numbers(num):
     '''
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
-
-    for num in range (1,num+1):
-        if (num % 2)== 0:
-            even_numbers = even_numbers + str(num) + ','
+    i = 1
+    num = 12
+    while i <= num:
+        if (i % 2)== 0:
+            even_numbers = even_numbers + str(i) + ','
+        i = i + 1
     
 
     return even_numbers
@@ -65,10 +66,12 @@ def main1():
     '''
     #write your code here
     
-    i = int(input('Enter number from keyboard:' ))
-    result = sum_odd_numbers(i)
-    print(result)
-    i = int(input('Enter number from keyboard:' ))
-    result = list_of_even_numbers(i)
-    print(result)
+    num = int(input('Enter number from keyboard:' ))
+    
+    for i in range(1, num):
+        result = sum_odd_numbers(i)
+        print(result)
+        i = int(input('Enter number from keyboard:' ))
+        result = list_of_even_numbers(i)
+        print(result)
     
