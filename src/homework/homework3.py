@@ -26,7 +26,6 @@ def list_of_even_numbers(num):
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
     i = 1
-    num = 12
     while i <= num:
         if (i % 2)== 0:
             even_numbers = even_numbers + str(i) + ','
