@@ -38,7 +38,7 @@ class TestHomework4(unittest.TestCase):
     #WRITE A TEST FOR valid_letter_grade with letter Z as argument
     def test_NOT_valid_letter_grade(self):
         #assert that 'Z' is not a valid letter_grade
-        self.assertNotEqual(False, valid_letter_grade('Z'))
+        self.assertEqual(False, valid_letter_grade('Z'))
 
 
     #WRITE A TEST FOR get_grade_points with arguments 3 and 4
