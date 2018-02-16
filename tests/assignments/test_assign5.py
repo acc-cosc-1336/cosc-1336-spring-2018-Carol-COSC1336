@@ -17,5 +17,5 @@ class Test_Assign4(unittest.TestCase):
         
     #write test cases with arguments 85 and 63 for recursive_decimal_binary function
 
-
+if __name__=='__main__':
 unittest.main(verbosity=2)
