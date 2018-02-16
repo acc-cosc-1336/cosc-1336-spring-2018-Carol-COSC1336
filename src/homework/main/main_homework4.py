@@ -27,17 +27,22 @@ def main():
         total_credit_hours = 0
         for grades_per_student in range (grades_per_student):
             letter_grade = input('Enter your letter grade for each class completed: ')
-            result1 = valid_letter_grade(letter_grade)
-            credit_points = get_credit_points(result1)
+            valid = valid_letter_grade(letter_grade)
+
+            while not valid:
+                letter_grade = input('Enter your letter grade for each class completed: ')
+                valid = valid_letter_grade(letter_grade)
+                
+            credit_points = get_credit_points(letter_grade)
 
             credit_hours = int(input('Enter the number of credit hours for the above class: '))
-            result3 = get_grade_points(credit_hours, credit_points) #only one class, need to accumulate
-            total_grade_points = total_grade_points + result3
-            print ('Student Total Grade Points are: ', total_grade_points)
+            grade_points = get_grade_points(credit_hours, credit_points) #only one class, need to accumulate
+            total_grade_points = total_grade_points + grade_points
+            
             total_credit_hours = total_credit_hours + credit_hours
-            print ('Student Total Credit Hours are: ', total_credit_hours)
-            result4 = get_grade_point_average(total_credit_hours,total_grade_points)
-            print('Student GPA is: ', result4)
+            
+        gpa = get_grade_point_average(total_credit_hours,total_grade_points)
+        print('Student GPA is: ', format(gpa, '.2f'))
     
                
 
