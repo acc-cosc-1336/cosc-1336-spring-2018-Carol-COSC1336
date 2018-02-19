@@ -66,9 +66,9 @@ def main1():
     #write your code here
     num = int(input('Enter number from keyboard:' ))
     for i in range(1, num+1):
-        result = sum_odd_numbers(i)
-        print(result)
-        result = list_of_even_numbers(i)
-        print(result)
+        odd_num_sum = sum_odd_numbers(i) 
+        even_num_list = list_of_even_numbers(i)      
+    print(odd_num_sum)
+    print(even_num_list)
 
 main1()
