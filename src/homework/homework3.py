@@ -27,10 +27,11 @@ def list_of_even_numbers(num):
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
 
-    for num in range (1,num+1):
-        if (num % 2)== 0:
-            even_numbers = even_numbers + str(num) + ','
-    
+    index = 1
+        while index <= num:
+            if index % 2 == 0:
+                even_numbers = even_numbers + str(num) + ','
+        index = index + 1
 
     return even_numbers
 
