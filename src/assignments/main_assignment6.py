@@ -16,10 +16,11 @@ Call the main function in Python Shell or in this file.
 '''
 def main():
 
-    countA,countC,countG,countT = get_count_A_C_G_and_T_in_string('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
+    dna = 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
+    countA,countC,countG,countT = get_count_A_C_G_and_T_in_string(dna)
 
     print('DNA String: ','/n')
-    print('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
+    print(dna)
     print('A ', countA,'C ',countC,'G ',countG,'T ',countT)
 
 main()
