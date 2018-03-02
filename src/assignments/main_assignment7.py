@@ -1,5 +1,5 @@
 #write the import for function for assignment7 sum_list_values
-from assignment7 import sum_list_values
+from src.assignments.assignment7 import sum_list_values
 '''
 Create a function named process_list that calls the sum_list_values function.
 Prints the list values and the sum of the element in the list as follows:
@@ -27,14 +27,23 @@ def process_list(list1):
 def main():
 
     new_list = []
+    again = 'Y'
+    while again == 'y' or again == 'Y':
+        #Prompt the user for name and append to the list.
+        name = input(str('Enter a name: '))
+        new_list.append(name)
+        #Prompt the user for number of numeric values in the list.
+        num = int(input('Enter the number of numeric values in the list list: '))
+        #Iterate for num times, prompting user for numeric values, and then append the values to the list 
+        for num in range(1,num+1):
+            num_value = int(input('Enter number to add to the list: '))
+            new_list.append(num_value)
+        #call the process_list function
+        process_list(new_list)
+        print('Do you want to add another list?')
+        again = input('y = yes, anything else = no: ')
 
-    while again == 'y' or again == 'Y'
-    
-        input('Enter a name: ')
-        for num 
-            input(int('Enter number to add to the list: '))
-            
-        
+main()
 
     
     
