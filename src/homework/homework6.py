@@ -146,8 +146,7 @@ def get_gc_content(dna_string):
 
     #final calc is outside while loop
 
-    gc_content = format((total_gc/len(dna_string)*100),'.6f')
-    gc_content = float(gc_content)
+    gc_content = float(format((total_gc/len(dna_string)*100),'.6f'))
     return gc_content
 
 '''
