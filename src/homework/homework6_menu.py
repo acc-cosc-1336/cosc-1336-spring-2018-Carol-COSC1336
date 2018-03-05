@@ -1,14 +1,14 @@
 #write import statements for homework 6 functions
 
-#from src.homework.homework6 import get_point_mutations
-#from src.homework.homework6 import get_dna_complement
-#from src.homework.homework6 import transcribe_dna_into_rna
-#from src.homework.homework6 import get_gc_content
+from src.homework.homework6 import get_point_mutations
+from src.homework.homework6 import get_dna_complement
+from src.homework.homework6 import transcribe_dna_into_rna
+from src.homework.homework6 import get_gc_content
 
-from homework6 import get_point_mutations
-from homework6 import get_dna_complement
-from homework6 import transcribe_dna_into_rna
-from homework6 import get_gc_content
+#from homework6 import get_point_mutations
+#from homework6 import get_dna_complement
+#from homework6 import transcribe_dna_into_rna
+#from homework6 import get_gc_content
 
 
 def menu_options():
@@ -81,7 +81,7 @@ def handle_option_2():
         line = infile.readline()
         compl = get_dna_complement(line)
         print('DNA complement: ', compl)
-        
+    infile.close()
 
 def handle_option_3():
     '''
@@ -94,7 +94,8 @@ def handle_option_3():
         line = infile.readline()
         transcribe = transcribe_dna_into_rna(line)
         print('RNA (transcribed from dna): ', transcribe)
-        
+    infile.close()
+    
 def handle_option_4():
     '''
     Write code to read the file compute_gc_content.dat and for each line
@@ -107,6 +108,7 @@ def handle_option_4():
         line = infile.readline()
         calc_cg = get_gc_content(line)
         print('gc content of dna string: ', calc_cg)
+    infile.close()
 
 def handle_option_5():
     pass #optional 
