@@ -77,8 +77,7 @@ def handle_option_2():
     '''
     infile = open('dna_complement.dat', 'r')
     
-    for line in range(5):
-        line = infile.readline()
+    for line in infile:
         compl = get_dna_complement(line)
         print('DNA complement: ', compl)
     infile.close()
@@ -90,8 +89,7 @@ def handle_option_3():
     '''
     infile = open('transcribe_dna_to_rna.dat', 'r')
 
-    for line in range(5):
-        line = infile.readline()
+    for line in infile:
         transcribe = transcribe_dna_into_rna(line)
         print('RNA (transcribed from dna): ', transcribe)
     infile.close()
@@ -104,8 +102,7 @@ def handle_option_4():
     '''
     infile = open('compute_gc_content.dat', 'r')
     
-    for line in range(5):
-        line = infile.readline()
+    for line in infile:
         calc_cg = get_gc_content(line)
         print('gc content of dna string: ', calc_cg)
     infile.close()
