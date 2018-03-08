@@ -62,4 +62,4 @@ class Test_Practice(unittest.TestCase):
         self.assertEqual(['sue', 'grace'], get_quiz_list_file())
 
 
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
