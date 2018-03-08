@@ -94,7 +94,7 @@ def get_quiz_list(list1):
     return return_list
 
 def get_quiz_list_file():
-    file = open('src.midterm.quiz.dat', 'r')
+    file = open('/home/travis/build/acc-cosc-1336/cosc-1336-spring-2018-Carol-COSC1336/src/midterm/quiz.dat', 'r')
     return_list = []
 
     for line in file:
