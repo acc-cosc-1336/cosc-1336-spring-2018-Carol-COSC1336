@@ -1,5 +1,5 @@
 import unittest
-from practice import get_km_per_hour, get_shipping_charge, get_total_of_numbers_squared, \
+from src.midterm.practice import get_km_per_hour, get_shipping_charge, get_total_of_numbers_squared, \
      get_quiz_list, get_quiz_list_file
 
 class Test_Practice(unittest.TestCase):
