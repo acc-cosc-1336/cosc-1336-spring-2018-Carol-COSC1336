@@ -130,6 +130,7 @@ def get_list_min_max_file():
 
         tmp_list += get_list_min_max(list1)
 
+    file.close()
     return get_list_min_max(tmp_list)
     
 
