@@ -71,9 +71,14 @@ CREATE A TEST CASE IN THE exam_test.py file.
         #ch -=1
     #return string1_rev
 def reverse_string(string1):
-    string1_rev = string1[::-1]
-    return string1_rev
+    index = len(string1)-1
+    return_string = ''
 
+    while index > -1:
+        return_string += string1[index]
+        index -= 1
+
+    return return_string
 '''
 10 points
 Create a function named get_list_min_max with a list1 parameter that returns the min and max values
@@ -88,16 +93,7 @@ Returns:
 CREATE A TEST CASE IN THE exam_test.py file.
 '''
 def get_list_min_max(list1):
-    index = 1
-    min_value = 0
-    max_value = 0
-    while index > 0:
-        min_value = min(list1)
-        print (min_value)
-        max_value = max(list1)
-        index += 1
-    return min_value , max_value
-
+    return  [min(list1[1:]), max(list1[1:])]
     
 
 
@@ -122,9 +118,19 @@ Return Value:
 '''
 def get_list_min_max_file():
     file = open('quiz.dat', 'r')
-    for line in file:
-        min_value = get_list_min_max(list1)
+    tmp_list = []
 
+    for line in file:
+        list1 = line.split()
+        i = 0
+        while i < len(list1):
+            if list1[i].isdigit():
+                list1[i] = int(list1[i])
+            i += 1
+
+        tmp_list += get_list_min_max(list1)
+
+    return get_list_min_max(tmp_list)
     
 
 
