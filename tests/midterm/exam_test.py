@@ -2,7 +2,7 @@ import unittest
 
 #write import statements for exam functions
 #from src.midterm.exam import get_miles_per_hour
-from src.midterm.exam import get_miles_per_hour, get_bonus_pay_amount, reverse_string, get_list_min_max
+from src.midterm.exam import get_miles_per_hour, get_bonus_pay_amount, reverse_string, get_list_min_max, get_list_min_max_file
 
 class Test_Midterm(unittest.TestCase):
 
@@ -57,5 +57,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with quiz.data file the return value should be [2,89]
         '''
-unittest.main(verbosity=2)
+        self.assertEqual([2,89], get_list_min_max_file())
+        
+#unittest.main(verbosity=2)
     
