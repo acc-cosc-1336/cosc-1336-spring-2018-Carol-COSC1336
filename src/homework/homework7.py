@@ -33,29 +33,26 @@ def get_p_distance_matrix(dna_list):
                   [0,0,0,0],
                   [0,0,0,0],
                   [0,0,0,0]]
-    #print(p_distance)
-    #print(dna_list)
     r=0
+    #next for loop determines how many rows and how many columns are in the input matrix
     for sub_list in dna_list:
         r=r+1
         c=0
         p_sum = 0
-        print(r,c)
+    print(r,c)
     for r in range(r):
+        #for c in range(len(sub_list)):
         while c < len(sub_list):
             if dna_list[r][c] != dna_list[r+1][c]:
                 print(dna_list[r][c], dna_list[r+1][c])
                 p_sum += 1
                 c+=1
+            elif dna_list[r][c] == dna_list[r+1][c]:
+                c+=1
+                print(dna_list[r][c], dna_list[r+1][c])
                 print(p_sum)
-    return p_sum
-
-        
-    #c=len(sub_list)
-
-    #for r in range(r):
-        #for c in range(c):
-            #print(dna_list[r][c]) 
-
-
-    #return p_distance
+            else:
+                print(p_sum)
+  
+    p_distance[0][1]= p_distance[1][0]= p_sum/len(sub_list)
+    return p_distance
