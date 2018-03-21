@@ -53,6 +53,7 @@ def get_p_distance_matrix(dna_list):
                 print(p_sum)
             else:
                 print(p_sum)
+
   
     p_distance[0][1]= p_distance[1][0]= p_sum/len(sub_list)
     return p_distance
