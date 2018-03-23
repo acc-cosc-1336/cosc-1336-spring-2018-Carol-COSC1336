@@ -1,7 +1,7 @@
 import unittest
 
 #write import statement for homework 7 file
-from homework7 import get_p_distance, get_p_distance_matrix 
+from src.homework.homework7 import get_p_distance, get_p_distance_matrix 
 
 
 class TestHomework7(unittest.TestCase):
@@ -41,4 +41,4 @@ class TestHomework7(unittest.TestCase):
 
     '''
 
-unittest.main(verbosity=2)    
+#unittest.main(verbosity=2)    
