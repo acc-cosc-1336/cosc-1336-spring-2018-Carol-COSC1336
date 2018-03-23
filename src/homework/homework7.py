@@ -27,36 +27,31 @@ Sample Output
 0.10000 0.30000 0.20000 0.00000
 
 '''
+def get_p_distance (list1, list2):
+    cnt=0
+    for i in range (len(list1)):
+        if list1[i] != list2[i]:
+            cnt+=1
+    return cnt / len(list1)
+
+
 def get_p_distance_matrix(dna_list):
 
     p_distance = [[0,0,0,0],
                   [0,0,0,0],
                   [0,0,0,0],
                   [0,0,0,0]]
-    r=0
-    #next for loop determines how many rows are in the input matrix
-    for sub_list in dna_list:
-        r=r+1
-        c=0
-        p_sum = 0
-    print(r,c)
-    for r in range(r):
-        #while column number less than length of sublist (adding c+1 in loop):
-        while c < len(sub_list):
-            if dna_list[r][c] != dna_list[r+1][c]:
-                print(dna_list[r][c], dna_list[r+1][c])
-                p_sum += 1
-                c+=1
-                print(p_sum)
-                print(r)
-                print(c)
-            else:
-                dna_list[r][c] == dna_list[r+1][c]
-                c+=1
-                print(dna_list[r][c], dna_list[r+1][c])
-                print(p_sum)
-                print(r)
-                print(c)
-    p_distance[0][1]= p_distance[1][0]= p_sum/len(sub_list)
-    
+    p_sum=0
+    for i in range(len(dna_list)):
+        print(' outer', dna_list[i])
+        for j in range(len(dna_list)):
+            p_distance[i][j] = get_p_distance(dna_list[i],dna_list[j])
+
     return p_distance
+
+dna = [
+ ['T','T','T','C','C','A','T','T','T','A'],
+ ['G','A','T','T','C','A','T','T','T','C'],
+ ['T','T','T','C','C','A','T','T','T','T'],
+ ['G','T','T','C','C','A','T','T','T','A']
+]
