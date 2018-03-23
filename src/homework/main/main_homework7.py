@@ -20,18 +20,14 @@ def main():
 
     file = open('p_distance.dat', 'r')
     return_list = []
-    list1 = []
-    p_distance = []
     for line in file:
         list1 = line.split()
         return_list.append(list1)
-    #print (return_list)
     
     p_distance = get_p_distance_matrix(return_list)
 
     file.close()
     print(p_distance)
-    return p_distance
 
 main()
 
