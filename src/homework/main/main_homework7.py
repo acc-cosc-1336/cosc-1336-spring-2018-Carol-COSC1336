@@ -25,7 +25,7 @@ def main():
     for line in file:
         list1 = line.split()
         return_list.append(list1)
-    print (return_list)
+    #print (return_list)
     
     p_distance = get_p_distance_matrix(return_list)
 
