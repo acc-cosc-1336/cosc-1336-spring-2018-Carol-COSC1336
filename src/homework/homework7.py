@@ -41,7 +41,7 @@ def get_p_distance_matrix(dna_list):
                   [0,0,0,0],
                   [0,0,0,0],
                   [0,0,0,0]]
-    p_sum=0
+
     for i in range(len(dna_list)):
         print(' outer', dna_list[i])
         for j in range(len(dna_list)):
