@@ -48,10 +48,3 @@ def get_p_distance_matrix(dna_list):
             p_distance[i][j] = get_p_distance(dna_list[i],dna_list[j])
 
     return p_distance
-
-dna = [
- ['T','T','T','C','C','A','T','T','T','A'],
- ['G','A','T','T','C','A','T','T','T','C'],
- ['T','T','T','C','C','A','T','T','T','T'],
- ['G','T','T','C','C','A','T','T','T','A']
-]
