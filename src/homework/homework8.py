@@ -15,9 +15,12 @@ def add_inventory(widgets, widget_name, quantity):
 
     if widget_name not in widgets:
         widgets[widget_name] = quantity
-    if widget_name in widgets:
-        count = widgets[widget_name]
-        quantity += count
+        print('1st if - NOT IN', widgets)
+    else:
+        if widget_name in widgets:
+            count = widgets[widget_name]
+            quantity += count
+            print('2nd if - IN', widgets)
   
     return quantity
             
