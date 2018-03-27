@@ -9,7 +9,7 @@ If the widget exists it will update the quantity of the widgets.
     :param quantity:    Running count of inventory on hand
     :return:
 '''
-def add_inventory(widgets, widget_name, quantity):
+def add_inventory(widget_name, quantity):
 
     widgets = {}
 
@@ -35,3 +35,13 @@ Otherwise it returns 'Item not found'
     :param widget_name:
     :return:
 '''
+def remove_inventory_widget(widget_name):
+
+    widgets={}
+
+    if widget_name in widgets:
+        del widgets['widget_name']
+        print('Record Deleted')
+    else:
+        if widget_name not in widgets:
+            print('Item not found')
