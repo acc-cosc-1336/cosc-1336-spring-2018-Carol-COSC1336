@@ -1,13 +1,13 @@
 #Write import statements for classes invoice and invoice_item and PRODUCT
-#from src.assignments.assignment10.invoice import  Invoice
-#from src.assignments.assignment10.invoice_item import  InvoiceItem
-#from src.assignments.assignment10.product import  Product
-#from src.assignments.assignment10.customer import  Customer
+from src.assignments.assignment10.invoice import  Invoice
+from src.assignments.assignment10.invoice_item import  InvoiceItem
+from src.assignments.assignment10.product import  Product
+from src.assignments.assignment10.customer import  Customer
 
-from invoice import  Invoice
-from invoice_item import  InvoiceItem
-from product import  Product
-from customer import  Customer
+#from invoice import  Invoice
+#from invoice_item import  InvoiceItem
+#from product import  Product
+#from customer import  Customer
 
 #ASSIGNMENT10 Write import statements for classes product and customer
 
