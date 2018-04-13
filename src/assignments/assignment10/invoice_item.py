@@ -1,6 +1,6 @@
-#from src.assignments.assignment10.product import Product
+from src.assignments.assignment10.product import Product
 
-from product import Product
+#from product import Product
 
 class InvoiceItem:
 
