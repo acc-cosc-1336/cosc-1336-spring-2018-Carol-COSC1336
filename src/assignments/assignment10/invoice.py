@@ -1,5 +1,5 @@
 #ASSIGNMENT10 write import statement for customer class
-from customer import Customer
+from src.assignments.assignment10.customer import Customer
 
 class Invoice:
 
