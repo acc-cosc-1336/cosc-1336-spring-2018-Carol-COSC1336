@@ -18,5 +18,5 @@ class Die6(Die):
 
     def roll (self, sides):
         print('Rolled 6 sided die')
-        Die.roll()
+        Die.roll(self)
               

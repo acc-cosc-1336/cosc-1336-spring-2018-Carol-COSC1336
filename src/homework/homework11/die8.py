@@ -18,4 +18,4 @@ class Die8(Die):
 
     def roll (self, sides):
         print('Rolled 8 sided die')
-        Die.roll()
+        Die.roll(self)
