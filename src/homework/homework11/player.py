@@ -17,8 +17,8 @@ class Player:
         i = 1
         while rolled_double == False:
 
-            roll1 = self.die1.roll(self.die1)
-            roll2 = self.die2.roll(self.die2)
+            roll1 = self.die1.roll()
+            roll2 = self.die2.roll()
 
             self.game_log.add_score_entry(ScoreEntry(i, roll1, roll2))
             i += 1
