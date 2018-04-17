@@ -16,7 +16,7 @@ class Die6(Die):
     def __init__(self):
         Die.__init__(self, 6)
 
-    def roll (self, sides):
+    def roll (self):
         print('Rolled 6 sided die')
-        Die.roll(self)
+        return Die.roll(self)
               
