@@ -1,7 +1,5 @@
-#from src.homework.homework11.score_entry import ScoreEntry
-
-from die import Die
-from score_entry import ScoreEntry
+from src.homework.homework11.score_entry import ScoreEntry
+from src.homework.homework11.die import Die
 
 class Player:
 
