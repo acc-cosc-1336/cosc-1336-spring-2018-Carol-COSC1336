@@ -12,6 +12,7 @@ class Win(Tk):
         Label(self, text="Result: ").pack()
 
         #ASSIGNMENT13: add the textvariable property and set its value to self.label_var
+        self.label_var = 
         Label(self, ).pack()
 
         #ASSIGNMENT13: add the command property for the button and set its value to self.button_evaluate_handler
