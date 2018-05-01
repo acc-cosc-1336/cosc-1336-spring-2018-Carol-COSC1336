@@ -12,11 +12,11 @@ class Win(Tk):
         Label(self, text="Result: ").pack()
 
         #ASSIGNMENT13: add the textvariable property and set its value to self.label_var
-        self.label_var = 
-        Label(self, ).pack()
+         
+        Label(self, textvariable=self.label_var).pack()
 
         #ASSIGNMENT13: add the command property for the button and set its value to self.button_evaluate_handler
-        Button(self, text='Evaluate', ).pack()
+        Button(self, text='Evaluate', command=self.button_evaluate_handler).pack()
         self.__init__radio_buttons()
 
         self.mainloop()
@@ -41,12 +41,12 @@ class Win(Tk):
         #for each write code IntVar above create a checkbox with attribute text
         #Never, Rarely, Sometimes, Often, Very Often, Always
         #and link the IntVar to the Checkbox variable attribute
-        self.check_nev =
-        self.check_rar =
-        self.check_som =
-        self.check_oft =
-        self.check_v_oft =
-        self.check_always =
+        self.check_nev = Checkbutton(self, text='Never', variable=self.check_var_nev)
+        self.check_rar = Checkbutton(self, text='Rarely', variable=self.check_var_rar)
+        self.check_som = Checkbutton(self, text='Sometimes', variable=self.check_var_som)
+        self.check_oft = Checkbutton(self, text='Often', variable=self.check_var_oft)
+        self.check_v_oft = Checkbutton(self, text='Very Often', variable=self.check_var_v_oft)
+        self.check_always = Checkbutton(self, text='Always', variable=self.check_var_always)
 
         self.check_nev.pack()
         self.check_rar.pack()
@@ -57,7 +57,7 @@ class Win(Tk):
 
     def button_evaluate_handler (self):
 
-        self.label_var.set(self.evaluator.faculty_evaluation_result(
+        self.label_var.set(self.evaluator.faculty_evaluation_result)
             0 if self.check_var_nev.get()== 0 else 1 ,
             0 if self.check_var_rar.get()== 0 else 2,
             0 if self.check_var_som.get()== 0 else 3,
