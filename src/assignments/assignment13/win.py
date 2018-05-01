@@ -1,6 +1,5 @@
 from tkinter import Tk, IntVar, Checkbutton, Button, Label, StringVar
 from src.assignments.assignment13.evaluator import Evaluator
-#from evaluator import Evaluator
 
 class Win(Tk):
 
