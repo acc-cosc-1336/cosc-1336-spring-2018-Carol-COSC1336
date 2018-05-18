@@ -2,12 +2,14 @@ from pie_arc import PieArc
 
 class PieChart(PieArc):
 
-    def __init__(self, text):
+    def __init__(self, list_pie_arcs):
 
-        PieArc.__init__(self,text)
+        self.list_pie_arcs = list_pie_arcs
 
     def draw(self):
 
-        print(self.text)        
+        for arc in self.list_pie_arcs:
+            
+            arc.draw()
 
                     
